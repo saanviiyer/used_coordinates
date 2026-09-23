@@ -6,7 +6,7 @@ before the prediction was made.
 
 ## What the domain contains
 
-`reacher-easy` has two actuated hinges, and they differ in exactly the way the
+`reacher-easy` has two actuated hinges, and they differ in the way the
 criterion cares about:
 
 | joint | limited | range | observed span |

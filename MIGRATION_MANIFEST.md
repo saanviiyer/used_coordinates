@@ -43,7 +43,7 @@ result, and everything about heading in the parent projects.
 2. The estimator's cached path reproduces the reference implementation to
    within 1e-6 for both architectures.
 3. Re-running the v4 search analysis from local code and local checkpoints
-   reproduces the migrated result exactly: across eight seeds and two planes,
+   reproduces the migrated result with no differences: across eight seeds and two planes,
    the maximum absolute difference in conjugacy residual is 0.000e+00, the
    maximum absolute difference in held-out concentration is 0.000e+00, and the
    best integer basis agrees in 16 of 16 cases. Exactness is expected rather
