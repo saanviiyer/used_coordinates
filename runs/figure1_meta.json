@@ -1,0 +1,32 @@
+{
+  "panels": [
+    {
+      "setting": "Arm, wraps Conv GRU",
+      "n": 8,
+      "winner": "rotation",
+      "n_winner": 8,
+      "expected": "rotation",
+      "matches_expectation": true,
+      "rotation_mean": 0.084,
+      "translation_mean": 0.446,
+      "winner_gain_at_grid_edge": 0
+    },
+    {
+      "setting": "Arm, stops Conv GRU",
+      "n": 8,
+      "winner": "translation",
+      "n_winner": 8,
+      "expected": "translation",
+      "matches_expectation": true,
+      "rotation_mean": 0.326,
+      "translation_mean": 0.125,
+      "winner_gain_at_grid_edge": 0
+    }
+  ],
+  "settings_without_json": [
+    "Arm, wraps RSSM",
+    "Arm, stops RSSM",
+    "Reacher shoulder RSSM",
+    "Reacher wrist RSSM"
+  ]
+}

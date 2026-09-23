@@ -1,0 +1,177 @@
+\documentclass{article}
+
+\usepackage{neurips_2026}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{graphicx}
+
+% Citations, refs and URLs are clickable either way; without this they are
+% rendered in black with an unprinted border box, so nothing signals a link.
+\definecolor{linknavy}{RGB}{20,70,140}
+\hypersetup{colorlinks=true,citecolor=linknavy,linkcolor=linknavy,urlcolor=linknavy}
+
+\input{numbers}
+
+\makeatletter
+\renewcommand{\@noticestring}{%
+Submitted to the NeurIPS 2026 Workshop on Robot Learning with World Models:
+Capabilities, Frontiers, and Challenges. Do not distribute.%
+}
+\makeatother
+
+\title{Which Latent Coordinates Drive World-Model Dynamics?}
+
+\author{Anonymous}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Probes show which physical variables can be decoded from a world model's latent state. We ask which latent coordinates organize its transition dynamics. Our action-conditioned test needs no ground-truth state labels during discovery: from one latent state we compare the effect of perturbing an action with the effect of transforming the state, and call a coordinate dynamically used when the transformation reproduces the model's response to the perturbation, judged against a variance-matched null. Readability and dynamic use dissociate in a two-joint arm. Both joint angles are strongly decodable, but the proximal joint has a conjugacy margin six times larger than the distal one and separates consistently from its matched null. Holding the action space and joint dynamics fixed while changing how the observation depends on the two actuators, the learned coordinates follow the observation geometry: the model represents the proximal joint, the sum of both joints, or the two joints separately, depending on what the image distinguishes. \GENERALITYSENT
+\end{abstract}
+
+\section{Introduction}
+
+World models learn latent states whose dynamics predict future observations \citep{hafner2019planet,hafner2025dreamerv3}. Understanding them requires more than knowing what information they contain. For planning, the question is which latent coordinates the transition function operates on.
+
+Most latent-state analyses use probes: decoders trained to predict a physical variable from the representation \citep{alain2017probes,belinkov2022probing}. Probe accuracy measures whether the variable is readable. A variable can stay readable while the transition dynamics do not organize predictions around it, as when the state keeps a decaying trace of an observation that supports decoding without giving a stable coordinate for multi-step prediction.
+
+Prior work addresses this with interventions \citep{hewitt2019control,geiger2021causal,elazar2021amnesic}: recent work on world models identifies a probe direction, modifies the latent state along it, and measures how predictions change \citep{zhang2026probingwm}. This establishes that predictions are sensitive to the selected direction, but the experiment still begins with a ground-truth variable chosen by the researcher and a direction identified from its labels.
+
+We instead ask whether the model's own dynamics reveal a coordinate system, comparing two interventions from the same latent state: one perturbs an action, the other transforms the state. If the transformation reproduces the effect of the perturbation, the action acts consistently through that coordinate. Group-structured models of MDPs impose this relation as an architectural constraint \citep{vanderpol2020mdph}; we test for it after training, in models built without one.
+
+This gives two questions: do readability and dynamic use identify the same variables, and what determines which used coordinates a predictive world model learns? We answer both in controlled two-joint environments. The two separate sharply, and the learned coordinates follow the structure of the observation, not the dimensionality of the action space.
+
+\section{Action-conditioned test}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\textwidth]{criterion.pdf}
+\caption{
+\textbf{A}: Action-conditioned test. From one latent state we compare a rollout after perturbing the action with a rollout after transforming the state, with observations withheld so both depend on the transition dynamics. A family matches the action when it reproduces the perturbed-action rollout.
+\textbf{B}: The recovered transformation follows joint geometry. Wrapping joints give rotations, otherwise identical joints with stops give translations. \FIGCAPSPAN{} A residual near $1$ means the fitted transformation improves little on leaving the state unchanged.
+}
+\label{fig:criterion}
+\end{figure}
+
+Let $h_t$ denote the model's latent state, $a_t$ an action, and $\hat{o}$ a predicted observation. We withhold observations over a rollout window so that subsequent states depend only on the learned transition dynamics.
+
+From the same state $h$ we generate two rollouts: the first perturbs the initial action by $\delta$, the second keeps the action fixed and transforms the initial latent state with $R$. We ask whether a single gain $g$ lets a transformation in the candidate family reproduce the perturbed-action rollout:
+
+$$
+\hat{o}_{1:T}\!\left(h,\,a_0+\delta\right)
+\;\approx\;
+\hat{o}_{1:T}\!\left(R_{g\delta}(h),\,a_0\right).
+$$
+
+The residual is the best prediction error achieved by the transformation divided by the error without transforming the state. A residual near $1$ means the candidate does not reproduce the action perturbation. Lower values indicate a stronger correspondence.
+
+Discovery uses actions and the model's own predictions, not ground-truth joint labels. After discovery, we use the physical joint angles only to identify the recovered coordinate.
+
+\paragraph{Transformation families.}
+We test two one-parameter families matching common joint geometries. A freely wrapping joint has circular state, so its action is a rotation in a latent plane. A joint with stops lies on an interval, so its action is a translation along a direction. They differ before fitting: a translation gives a nonzero signed mean response, a rotation averages to zero across phase. We fit both and keep the lower residual.
+
+\paragraph{Matched null.}
+Low residuals can arise from flexible latent directions unrelated to the action. We therefore compare every fitted coordinate against directions from the orthogonal complement, matched for dimension and explained variance, asking whether it reproduces the action better than equally expressive directions.
+
+\section{Results}
+
+\subsection{Readable variables need not organize the dynamics}
+\label{sec:dissoc}
+
+In the serial two-joint arm of Section~\ref{sec:built}, both joints are visible and readable from the learned state: concentration $\SerialGruPOneKappa$ proximal and $\SerialGruPTwoKappa$ distal, against untrained floors of $\UntrGruPOneKappa$ and $\UntrGruPTwoKappa$, so the distal joint reads at roughly four times its floor.
+
+The action-conditioned test gives a different result. The proximal joint reaches residual $\SerialGruPOneResid$ against a matched null of $\SerialGruPOneNull$, beating that null in $\SerialGruPOneBeats$ of $\nSerialSeeds$ seeds and falling below the lowest matched direction in $\SerialGruPOneStrict$. The distal joint reaches $\SerialGruPTwoResid$ against $\SerialGruPTwoNull$, with only $\SerialGruPTwoStrict$ seeds below that minimum. Mean margins are $\SerialGruPOneGap$ and $\SerialGruPTwoGap$.
+
+Because the null is sampled, we repeated the analysis with an independent draw. The residuals are bit-identical, while the null medians move by $\SerialGruPOneNullDrift$ and $\SerialGruPTwoNullDrift$. The proximal margin stays $\SerialGruPOneMarginOverDrift$ times that variation and clears the null in $\SerialGruPOneBeatsA$ of $\nNullSeeds$ seeds under both draws. The distal count changes from $\SerialGruPTwoBeatsA$ to $\SerialGruPTwoBeatsB$ between draws. \HORIZONPARA
+
+Only the proximal coordinate is clearly separated from null variability. We do not claim the distal plane carries nothing: at this sample size its residual is inconclusive, not negative. What differs is the strength of the two statements. Probe concentrations separate the joints by a factor of two and report both as readable. The action-conditioned margins separate them by a factor of six and establish only the proximal coordinate. Readability therefore does not settle whether the dynamics use a coordinate.
+
+\subsection{Observation geometry determines the learned coordinates}
+\label{sec:built}
+
+\begin{table}[t]
+\centering
+\small
+\caption{
+Action space, joint dynamics, image size, sensor noise, architecture and training budget are held fixed while the observation's dependence on the two actuators changes. The criterion reports a residual with its matched-variance null in parentheses, and \emph{beats} counts seeds falling below their own null. The basis is discovered without angle labels, and concentration is measured afterwards against the named physical coordinate. $n=\nSerialSeeds$ seeds.
+}
+\label{tab:envs}
+\begin{tabular}{llcccc}
+\toprule
+Environment & Image depends on & Basis & Residual (null) & Beats & Conc. \\
+\midrule
+Serial arm
+& $q_1$ and $q_1{+}q_2$
+& $\SerialGruPOneBasis$
+& $\SerialGruPOneResid$ ($\SerialGruPOneNull$)
+& $\SerialGruPOneBeats$/$\nSerialSeeds$
+& $\SerialGruPOneKappa$ \\
+Parity arm
+& $q_1{+}q_2$ only
+& $\ParityGruPOneBasis$
+& $\ParityGruPOneResid$ ($\ParityGruPOneNull$)
+& $\ParityGruPOneBeats$/$\nParitySeeds$
+& $\ParityGruPOneKappa$ \\
+Decoupled
+& $q_1$ and $q_2$ separately
+& $\DecoupGruPOneBasis$
+& $\DecoupGruPOneResid$ ($\DecoupGruPOneNull$)
+& $\DecoupGruPOneBeats$/$\nDecoupSeeds$
+& $\DecoupGruPOneKappa$ \\
+&
+&
+$\DecoupGruPTwoBasis$
+& $\DecoupGruPTwoResid$ ($\DecoupGruPTwoNull$)
+& $\DecoupGruPTwoBeats$/$\nDecoupSeeds$
+& $\DecoupGruPTwoKappa$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A two-actuator system provides two independent action dimensions, but a predictive model need not give each actuator its own coordinate. We change only how the observation depends on the two actuators (Table~\ref{tab:envs}).
+
+In the serial arm the image depends on the proximal angle $q_1$ and the absolute distal angle $q_1+q_2$, so proximal motion changes both links. The model learns one dominant coordinate aligned with the proximal joint, at residual $\SerialGruPOneResid$ against a null of $\SerialGruPOneNull$ in $\SerialGruPOneBeats$ of $\nSerialSeeds$ seeds. A second plane stays near its null, at $\SerialGruPTwoResid$ against $\SerialGruPTwoNull$.
+
+A serial chain limits how strongly the distal actuator affects the image relative to the proximal one. Changing the link lengths moves the two toward parity, with the image-change ratio approaching $\envParityRatioOne$, at which point the image depends only on $q_1+q_2$. The model then learns a coordinate for that sum in $\ParityGruPOneVotes$ of $\nParitySeeds$ seeds, at concentration $\ParityGruPOneKSum$ against $\ParityGruPOneKProx$ for $q_1$ and $\ParityGruPOneKDist$ for $q_2$.
+
+Giving each actuator a separate visible component, the model learns two coordinates, at residuals $\DecoupGruPOneResid$ and $\DecoupGruPTwoResid$ against nulls of $\DecoupGruPOneNull$ and $\DecoupGruPTwoNull$, beating their own nulls in $\DecoupGruPOneBeats$ and $\DecoupGruPTwoBeats$ of $\nDecoupSeeds$ seeds.
+
+The action space is identical in all three environments, and the learned coordinate system changes with the variables the observation distinguishes. Predictive training organizes latent dynamics around observation geometry instead of assigning one coordinate per action dimension.
+
+\subsection{The recovered transformation follows the physical state geometry}
+
+The criterion should recover different families when the coordinate has different geometry, so we change whether the joints wrap and leave the rest of the environment unchanged. When the joints wrap it selects a rotation in $\FamParityGruPOneFamilyN$ of $\nFamParityGruSeeds$ seeds (residual $\FamParityGruPOneRot$ against $\FamParityGruPOneTra$ for a translation). Adding stops changes the coordinate from a circle to an interval, and the criterion then selects a translation in $\FamBoundGruPOneFamilyN$ of $\nFamBoundGruSeeds$ (residual $\FamBoundGruPOneTra$ against $\FamBoundGruPOneRot$; Figure~\ref{fig:criterion}B).
+
+\ARCHPARA
+
+\DOMAINPARA
+
+\VALIDITYPARA
+
+\section{Limitations}
+
+\LIMSCOPE{}
+
+Our models have fewer than four million parameters and our environments are simulated, so the experiments establish a controlled separation between readability and dynamic use without estimating how often it appears in deployed systems. The criterion tests two one-parameter families and will not detect coordinates governed by other transformations.
+
+Readability is measured against an untrained-network floor, not a tuned probe, so a comparison with stronger probing and disentanglement methods \citep{higgins2017betavae,locatello2019challenging} remains open. The experiments establish that high concentration can coexist with weak action-conditioned evidence, not that the criterion dominates every alternative measure. Inference is across seeds at an exact two-sided sign-flip floor of $p=\exactFloor$, which is why we report effect sizes and matched-null margins alongside it.
+
+\section{Conclusion}
+
+A readable variable and a dynamically active coordinate are different properties of a world model. We test the second by asking whether a transformation of the latent state reproduces the model's response to an action perturbation. In controlled two-joint environments the criterion separates coordinates that probes call similarly present, and observation geometry determines which coordinates predictive training builds. For robot learning this is a concrete constraint: predictive objectives organize latent dynamics around distinctions available in the observation, so a task needing separate control-relevant coordinates must have an observation or objective that distinguishes them.
+
+\bibliographystyle{plainnat}
+\bibliography{refs}
+
+\end{document}

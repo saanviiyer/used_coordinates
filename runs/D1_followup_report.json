@@ -1,0 +1,1436 @@
+{
+  "v4_parity_arm": {
+    "n_checkpoints": 48,
+    "by_model": {
+      "gru": {
+        "per_condition": {
+          "dark": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.08402499999999999,
+              "mean_null": 0.8866,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.9834375,
+              "mean_response_magnitude": 0.38789125,
+              "basis_votes": {
+                "[1, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.9834,
+                "[1, 0]": 0.1362,
+                "[2, 0]": 0.1357,
+                "[2, 1]": 0.1287,
+                "[0, 1]": 0.1203,
+                "[0, 2]": 0.1203,
+                "[1, 2]": 0.1088,
+                "[1, -1]": 0.0983
+              },
+              "response_over_floor": 20.62
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.8785499999999999,
+              "mean_null": 0.902475,
+              "beats_null_n": 6,
+              "mean_best_kappa": 0.5333625,
+              "mean_response_magnitude": 0.38676750000000004,
+              "basis_votes": {
+                "[1, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.5334,
+                "[1, 0]": 0.1137,
+                "[1, -1]": 0.1129,
+                "[1, 2]": 0.1038,
+                "[2, 0]": 0.1022,
+                "[0, 1]": 0.1011,
+                "[2, 1]": 0.0933,
+                "[0, 2]": 0.0871
+              },
+              "response_over_floor": 20.34
+            }
+          ],
+          "lit": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.9723999999999999,
+              "mean_null": 0.9916625,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.169075,
+              "mean_response_magnitude": 0.04217875,
+              "basis_votes": {
+                "[1, 1]": 5,
+                "[2, 1]": 2,
+                "[1, -1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.1526,
+                "[2, 1]": 0.1417,
+                "[1, 0]": 0.1241,
+                "[1, -1]": 0.1172,
+                "[2, 0]": 0.1135,
+                "[1, 2]": 0.0925,
+                "[0, 1]": 0.0838,
+                "[0, 2]": 0.0804
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.9776875,
+              "mean_null": 0.9973000000000001,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.1639875,
+              "mean_response_magnitude": 0.04351125,
+              "basis_votes": {
+                "[2, 1]": 5,
+                "[1, 1]": 3
+              },
+              "mean_kappa_by_basis": {
+                "[2, 1]": 0.151,
+                "[1, 1]": 0.1368,
+                "[1, 0]": 0.1153,
+                "[2, 0]": 0.1148,
+                "[1, -1]": 0.1121,
+                "[1, 2]": 0.099,
+                "[0, 1]": 0.0978,
+                "[0, 2]": 0.0934
+              }
+            }
+          ],
+          "shuffle": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.3060625,
+              "mean_null": 0.8226,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.87355,
+              "mean_response_magnitude": 0.1749075,
+              "basis_votes": {
+                "[1, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.8736,
+                "[2, 0]": 0.1443,
+                "[1, 0]": 0.1348,
+                "[2, 1]": 0.1258,
+                "[0, 2]": 0.1234,
+                "[0, 1]": 0.1227,
+                "[1, -1]": 0.1085,
+                "[1, 2]": 0.1053
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.5661875000000001,
+              "mean_null": 0.8675499999999999,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.6705625,
+              "mean_response_magnitude": 0.17735125000000002,
+              "basis_votes": {
+                "[1, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.6706,
+                "[1, 0]": 0.162,
+                "[2, 0]": 0.161,
+                "[2, 1]": 0.1355,
+                "[0, 2]": 0.1133,
+                "[1, -1]": 0.1116,
+                "[1, 2]": 0.1087,
+                "[0, 1]": 0.0979
+              }
+            }
+          ]
+        },
+        "controls": {
+          "plane1_residual_dark_vs_lit": {
+            "mean_a": 0.08402499999999999,
+            "mean_b": 0.9723999999999999,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_best_kappa_dark_vs_lit": {
+            "mean_a": 0.9834375,
+            "mean_b": 0.169075,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_lit": {
+            "mean_a": 0.8785499999999999,
+            "mean_b": 0.9776875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_lit": {
+            "mean_a": 0.5333625,
+            "mean_b": 0.1639875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_residual_dark_vs_shuffle": {
+            "mean_a": 0.08402499999999999,
+            "mean_b": 0.3060625,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.9834375,
+            "mean_b": 0.87355,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_shuffle": {
+            "mean_a": 0.8785499999999999,
+            "mean_b": 0.5661875000000001,
+            "pairs_favouring_dark": 0,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.5333625,
+            "mean_b": 0.6705625,
+            "pairs_favouring_dark": 1,
+            "n_pairs": 8,
+            "exact_p": 0.046875
+          }
+        },
+        "untrained_floor": {
+          "plane1_response_magnitude": 0.018807499999999998,
+          "plane2_response_magnitude": 0.0190125
+        }
+      },
+      "modular": {
+        "per_condition": {
+          "dark": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.357225,
+              "mean_null": 0.8854625,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.7577125,
+              "mean_response_magnitude": 0.26244,
+              "basis_votes": {
+                "[1, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.7577,
+                "[2, 0]": 0.1584,
+                "[1, 0]": 0.1578,
+                "[0, 1]": 0.1195,
+                "[0, 2]": 0.1192,
+                "[1, -1]": 0.1073,
+                "[2, 1]": 0.1035,
+                "[1, 2]": 0.1002
+              },
+              "response_over_floor": 13.41
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.30495,
+              "mean_null": 0.8150124999999999,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.7422625,
+              "mean_response_magnitude": 0.26688124999999996,
+              "basis_votes": {
+                "[1, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.7423,
+                "[2, 0]": 0.1654,
+                "[2, 1]": 0.1493,
+                "[0, 2]": 0.1322,
+                "[1, 2]": 0.13,
+                "[1, 0]": 0.1287,
+                "[0, 1]": 0.1265,
+                "[1, -1]": 0.1133
+              },
+              "response_over_floor": 12.95
+            }
+          ],
+          "lit": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.9777125,
+              "mean_null": 0.9960125,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.150775,
+              "mean_response_magnitude": 0.05522375,
+              "basis_votes": {
+                "[2, 1]": 7,
+                "[0, 2]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[2, 1]": 0.1507,
+                "[0, 2]": 0.1374,
+                "[1, 0]": 0.1347,
+                "[2, 0]": 0.1347,
+                "[1, -1]": 0.0731,
+                "[1, 1]": 0.0724,
+                "[0, 1]": 0.0699,
+                "[1, 2]": 0.0679
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.9822124999999999,
+              "mean_null": 0.9974750000000001,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.16515,
+              "mean_response_magnitude": 0.05148125,
+              "basis_votes": {
+                "[1, -1]": 6,
+                "[2, 0]": 1,
+                "[1, 2]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, -1]": 0.1624,
+                "[1, 2]": 0.1343,
+                "[2, 0]": 0.1334,
+                "[0, 1]": 0.1144,
+                "[1, 0]": 0.1111,
+                "[0, 2]": 0.1106,
+                "[2, 1]": 0.0884,
+                "[1, 1]": 0.0532
+              }
+            }
+          ],
+          "shuffle": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.576,
+              "mean_null": 0.869125,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.6398375000000001,
+              "mean_response_magnitude": 0.1016625,
+              "basis_votes": {
+                "[1, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.6398,
+                "[2, 0]": 0.1624,
+                "[1, 0]": 0.1609,
+                "[2, 1]": 0.141,
+                "[1, -1]": 0.1179,
+                "[0, 2]": 0.1113,
+                "[1, 2]": 0.0984,
+                "[0, 1]": 0.096
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.5700000000000001,
+              "mean_null": 0.8619625,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.6817,
+              "mean_response_magnitude": 0.10235125,
+              "basis_votes": {
+                "[1, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 1]": 0.6817,
+                "[2, 0]": 0.1555,
+                "[1, 0]": 0.148,
+                "[2, 1]": 0.1344,
+                "[1, -1]": 0.1269,
+                "[1, 2]": 0.1216,
+                "[0, 2]": 0.1109,
+                "[0, 1]": 0.0912
+              }
+            }
+          ]
+        },
+        "controls": {
+          "plane1_residual_dark_vs_lit": {
+            "mean_a": 0.357225,
+            "mean_b": 0.9777125,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_best_kappa_dark_vs_lit": {
+            "mean_a": 0.7577125,
+            "mean_b": 0.150775,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_lit": {
+            "mean_a": 0.30495,
+            "mean_b": 0.9822124999999999,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_lit": {
+            "mean_a": 0.7422625,
+            "mean_b": 0.16515,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_residual_dark_vs_shuffle": {
+            "mean_a": 0.357225,
+            "mean_b": 0.576,
+            "pairs_favouring_dark": 6,
+            "n_pairs": 8,
+            "exact_p": 0.03125
+          },
+          "plane1_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.7577125,
+            "mean_b": 0.6398375000000001,
+            "pairs_favouring_dark": 7,
+            "n_pairs": 8,
+            "exact_p": 0.015625
+          },
+          "plane2_residual_dark_vs_shuffle": {
+            "mean_a": 0.30495,
+            "mean_b": 0.5700000000000001,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.7422625,
+            "mean_b": 0.6817,
+            "pairs_favouring_dark": 7,
+            "n_pairs": 8,
+            "exact_p": 0.0234375
+          }
+        },
+        "untrained_floor": {
+          "plane1_response_magnitude": 0.01957625,
+          "plane2_response_magnitude": 0.020605
+        }
+      }
+    }
+  },
+  "v5_decoupled": {
+    "n_checkpoints": 48,
+    "by_model": {
+      "gru": {
+        "per_condition": {
+          "dark": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.361575,
+              "mean_null": 0.9744875,
+              "beats_null_n": 7,
+              "mean_best_kappa": 0.882425,
+              "mean_response_magnitude": 0.1777725,
+              "basis_votes": {
+                "[1, 0]": 7,
+                "[0, 1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.8215,
+                "[0, 1]": 0.2204,
+                "[1, 1]": 0.1347,
+                "[2, 0]": 0.1303,
+                "[2, 1]": 0.122,
+                "[0, 2]": 0.1108,
+                "[1, 2]": 0.1014,
+                "[1, -1]": 0.0822
+              },
+              "response_over_floor": 9.45
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.22827499999999998,
+              "mean_null": 0.9231875,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.9414374999999999,
+              "mean_response_magnitude": 0.2822225,
+              "basis_votes": {
+                "[0, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[0, 1]": 0.9414,
+                "[1, 0]": 0.1343,
+                "[1, 1]": 0.1232,
+                "[2, 0]": 0.122,
+                "[1, 2]": 0.0892,
+                "[1, -1]": 0.0879,
+                "[0, 2]": 0.0854,
+                "[2, 1]": 0.0834
+              },
+              "response_over_floor": 14.84
+            }
+          ],
+          "lit": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.9928375,
+              "mean_null": 0.9994625,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.17154999999999998,
+              "mean_response_magnitude": 0.00884125,
+              "basis_votes": {
+                "[2, 1]": 4,
+                "[0, 2]": 2,
+                "[1, 0]": 1,
+                "[0, 1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.1411,
+                "[2, 1]": 0.1403,
+                "[0, 2]": 0.1333,
+                "[2, 0]": 0.113,
+                "[1, -1]": 0.0966,
+                "[1, 2]": 0.0937,
+                "[0, 1]": 0.0892,
+                "[1, 1]": 0.0883
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.9949749999999999,
+              "mean_null": 0.9995875000000001,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.1776875,
+              "mean_response_magnitude": 0.011842499999999999,
+              "basis_votes": {
+                "[1, -1]": 5,
+                "[1, 0]": 2,
+                "[0, 1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.1411,
+                "[1, -1]": 0.1372,
+                "[1, 2]": 0.1144,
+                "[0, 1]": 0.1054,
+                "[2, 0]": 0.1052,
+                "[2, 1]": 0.105,
+                "[0, 2]": 0.1024,
+                "[1, 1]": 0.0898
+              }
+            }
+          ],
+          "shuffle": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.7267625,
+              "mean_null": 0.97705,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.6656500000000001,
+              "mean_response_magnitude": 0.04320125,
+              "basis_votes": {
+                "[1, 0]": 6,
+                "[0, 1]": 2
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.6128,
+                "[0, 1]": 0.2708,
+                "[2, 1]": 0.1368,
+                "[1, 1]": 0.1278,
+                "[2, 0]": 0.124,
+                "[1, 2]": 0.1215,
+                "[0, 2]": 0.1024,
+                "[1, -1]": 0.0769
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.5666875,
+              "mean_null": 0.978775,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.777875,
+              "mean_response_magnitude": 0.09460374999999999,
+              "basis_votes": {
+                "[0, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[0, 1]": 0.7779,
+                "[1, 0]": 0.2003,
+                "[1, 1]": 0.1216,
+                "[2, 0]": 0.1161,
+                "[1, 2]": 0.1025,
+                "[1, -1]": 0.0947,
+                "[2, 1]": 0.0916,
+                "[0, 2]": 0.0873
+              }
+            }
+          ]
+        },
+        "controls": {
+          "plane1_residual_dark_vs_lit": {
+            "mean_a": 0.361575,
+            "mean_b": 0.9928375,
+            "pairs_favouring_dark": 7,
+            "n_pairs": 8,
+            "exact_p": 0.015625
+          },
+          "plane1_best_kappa_dark_vs_lit": {
+            "mean_a": 0.882425,
+            "mean_b": 0.17154999999999998,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_lit": {
+            "mean_a": 0.22827499999999998,
+            "mean_b": 0.9949749999999999,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_lit": {
+            "mean_a": 0.9414374999999999,
+            "mean_b": 0.1776875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_residual_dark_vs_shuffle": {
+            "mean_a": 0.361575,
+            "mean_b": 0.7267625,
+            "pairs_favouring_dark": 7,
+            "n_pairs": 8,
+            "exact_p": 0.015625
+          },
+          "plane1_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.882425,
+            "mean_b": 0.6656500000000001,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_shuffle": {
+            "mean_a": 0.22827499999999998,
+            "mean_b": 0.5666875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.9414374999999999,
+            "mean_b": 0.777875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          }
+        },
+        "untrained_floor": {
+          "plane1_response_magnitude": 0.018807499999999998,
+          "plane2_response_magnitude": 0.0190125
+        }
+      },
+      "modular": {
+        "per_condition": {
+          "dark": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.5316624999999999,
+              "mean_null": 0.9944250000000001,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.7257125,
+              "mean_response_magnitude": 0.13862000000000002,
+              "basis_votes": {
+                "[1, 0]": 7,
+                "[0, 1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.72,
+                "[0, 1]": 0.1842,
+                "[1, 1]": 0.1478,
+                "[2, 0]": 0.1348,
+                "[0, 2]": 0.1169,
+                "[2, 1]": 0.1069,
+                "[1, 2]": 0.0968,
+                "[1, -1]": 0.0893
+              },
+              "response_over_floor": 7.08
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.21065,
+              "mean_null": 0.9400999999999999,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.9621375,
+              "mean_response_magnitude": 0.26059750000000004,
+              "basis_votes": {
+                "[0, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[0, 1]": 0.9621,
+                "[1, 0]": 0.1362,
+                "[2, 0]": 0.1308,
+                "[1, 1]": 0.1253,
+                "[1, -1]": 0.1028,
+                "[1, 2]": 0.0812,
+                "[0, 2]": 0.0764,
+                "[2, 1]": 0.0756
+              },
+              "response_over_floor": 12.65
+            }
+          ],
+          "lit": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.986025,
+              "mean_null": 0.99945,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.1552625,
+              "mean_response_magnitude": 0.02248625,
+              "basis_votes": {
+                "[0, 2]": 4,
+                "[2, 1]": 4
+              },
+              "mean_kappa_by_basis": {
+                "[2, 1]": 0.1518,
+                "[1, 0]": 0.1348,
+                "[2, 0]": 0.1348,
+                "[0, 2]": 0.1306,
+                "[1, 1]": 0.0762,
+                "[1, 2]": 0.0644,
+                "[0, 1]": 0.0608,
+                "[1, -1]": 0.0574
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.9728875,
+              "mean_null": 0.997625,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.1731375,
+              "mean_response_magnitude": 0.03186375,
+              "basis_votes": {
+                "[1, -1]": 7,
+                "[1, 2]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, -1]": 0.1654,
+                "[1, 2]": 0.1341,
+                "[2, 0]": 0.1301,
+                "[0, 1]": 0.1201,
+                "[1, 0]": 0.1176,
+                "[0, 2]": 0.1169,
+                "[2, 1]": 0.0912,
+                "[1, 1]": 0.0542
+              }
+            }
+          ],
+          "shuffle": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.8611125,
+              "mean_null": 0.9930249999999999,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.599175,
+              "mean_response_magnitude": 0.035345,
+              "basis_votes": {
+                "[1, 0]": 7,
+                "[0, 1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.5967,
+                "[0, 1]": 0.239,
+                "[2, 0]": 0.1585,
+                "[1, 1]": 0.1339,
+                "[2, 1]": 0.1184,
+                "[1, 2]": 0.1167,
+                "[0, 2]": 0.1155,
+                "[1, -1]": 0.0966
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.6913875,
+              "mean_null": 0.9894375,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.8192875,
+              "mean_response_magnitude": 0.08436875,
+              "basis_votes": {
+                "[0, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[0, 1]": 0.8193,
+                "[1, 0]": 0.1598,
+                "[2, 0]": 0.1268,
+                "[1, 1]": 0.1232,
+                "[2, 1]": 0.1064,
+                "[1, -1]": 0.0943,
+                "[1, 2]": 0.0862,
+                "[0, 2]": 0.0755
+              }
+            }
+          ]
+        },
+        "controls": {
+          "plane1_residual_dark_vs_lit": {
+            "mean_a": 0.5316624999999999,
+            "mean_b": 0.986025,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_best_kappa_dark_vs_lit": {
+            "mean_a": 0.7257125,
+            "mean_b": 0.1552625,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_lit": {
+            "mean_a": 0.21065,
+            "mean_b": 0.9728875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_lit": {
+            "mean_a": 0.9621375,
+            "mean_b": 0.1731375,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_residual_dark_vs_shuffle": {
+            "mean_a": 0.5316624999999999,
+            "mean_b": 0.8611125,
+            "pairs_favouring_dark": 7,
+            "n_pairs": 8,
+            "exact_p": 0.0234375
+          },
+          "plane1_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.7257125,
+            "mean_b": 0.599175,
+            "pairs_favouring_dark": 6,
+            "n_pairs": 8,
+            "exact_p": 0.21875
+          },
+          "plane2_residual_dark_vs_shuffle": {
+            "mean_a": 0.21065,
+            "mean_b": 0.6913875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.9621375,
+            "mean_b": 0.8192875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          }
+        },
+        "untrained_floor": {
+          "plane1_response_magnitude": 0.01957625,
+          "plane2_response_magnitude": 0.020605
+        }
+      }
+    }
+  },
+  "v6_decoupled_symmetric_loss": {
+    "n_checkpoints": 48,
+    "by_model": {
+      "gru": {
+        "per_condition": {
+          "dark": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.2035375,
+              "mean_null": 0.904625,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.9513375,
+              "mean_response_magnitude": 0.33874625,
+              "basis_votes": {
+                "[1, 0]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.9513,
+                "[2, 0]": 0.1489,
+                "[0, 1]": 0.1379,
+                "[1, 1]": 0.1269,
+                "[0, 2]": 0.1173,
+                "[2, 1]": 0.1172,
+                "[1, 2]": 0.1,
+                "[1, -1]": 0.0685
+              },
+              "response_over_floor": 18.01
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.30665,
+              "mean_null": 0.9814499999999999,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.9415625,
+              "mean_response_magnitude": 0.24271375,
+              "basis_votes": {
+                "[0, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[0, 1]": 0.9416,
+                "[1, 0]": 0.131,
+                "[1, 1]": 0.1286,
+                "[2, 0]": 0.1258,
+                "[1, 2]": 0.0936,
+                "[1, -1]": 0.0852,
+                "[2, 1]": 0.0746,
+                "[0, 2]": 0.067
+              },
+              "response_over_floor": 12.77
+            }
+          ],
+          "lit": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.989975,
+              "mean_null": 0.9996,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.1800375,
+              "mean_response_magnitude": 0.0184625,
+              "basis_votes": {
+                "[1, 0]": 4,
+                "[0, 2]": 2,
+                "[2, 1]": 1,
+                "[0, 1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.1691,
+                "[0, 2]": 0.1357,
+                "[2, 0]": 0.134,
+                "[2, 1]": 0.1296,
+                "[1, 2]": 0.0904,
+                "[1, 1]": 0.0894,
+                "[0, 1]": 0.0796,
+                "[1, -1]": 0.0787
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.9967999999999999,
+              "mean_null": 0.9998750000000001,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.171575,
+              "mean_response_magnitude": 0.012650000000000002,
+              "basis_votes": {
+                "[0, 2]": 3,
+                "[1, 0]": 2,
+                "[1, 2]": 1,
+                "[1, -1]": 1,
+                "[2, 1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.1477,
+                "[2, 1]": 0.1288,
+                "[0, 2]": 0.126,
+                "[1, -1]": 0.1126,
+                "[2, 0]": 0.1095,
+                "[0, 1]": 0.0991,
+                "[1, 1]": 0.0965,
+                "[1, 2]": 0.0868
+              }
+            }
+          ],
+          "shuffle": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.5596375,
+              "mean_null": 0.99435,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.7958875000000001,
+              "mean_response_magnitude": 0.07111875,
+              "basis_votes": {
+                "[1, 0]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.7959,
+                "[0, 1]": 0.157,
+                "[1, 1]": 0.129,
+                "[2, 0]": 0.1281,
+                "[0, 2]": 0.1269,
+                "[2, 1]": 0.1203,
+                "[1, 2]": 0.1153,
+                "[1, -1]": 0.0722
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.6547,
+              "mean_null": 0.986,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.8225625,
+              "mean_response_magnitude": 0.07487625,
+              "basis_votes": {
+                "[0, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[0, 1]": 0.8226,
+                "[1, 0]": 0.1737,
+                "[2, 0]": 0.1247,
+                "[1, 1]": 0.1106,
+                "[2, 1]": 0.1052,
+                "[1, 2]": 0.1036,
+                "[1, -1]": 0.0972,
+                "[0, 2]": 0.085
+              }
+            }
+          ]
+        },
+        "controls": {
+          "plane1_residual_dark_vs_lit": {
+            "mean_a": 0.2035375,
+            "mean_b": 0.989975,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_best_kappa_dark_vs_lit": {
+            "mean_a": 0.9513375,
+            "mean_b": 0.1800375,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_lit": {
+            "mean_a": 0.30665,
+            "mean_b": 0.9967999999999999,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_lit": {
+            "mean_a": 0.9415625,
+            "mean_b": 0.171575,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_residual_dark_vs_shuffle": {
+            "mean_a": 0.2035375,
+            "mean_b": 0.5596375,
+            "pairs_favouring_dark": 7,
+            "n_pairs": 8,
+            "exact_p": 0.015625
+          },
+          "plane1_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.9513375,
+            "mean_b": 0.7958875000000001,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_shuffle": {
+            "mean_a": 0.30665,
+            "mean_b": 0.6547,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.9415625,
+            "mean_b": 0.8225625,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          }
+        },
+        "untrained_floor": {
+          "plane1_response_magnitude": 0.018807499999999998,
+          "plane2_response_magnitude": 0.0190125
+        }
+      },
+      "modular": {
+        "per_condition": {
+          "dark": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.340425,
+              "mean_null": 0.9540249999999999,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.8649625,
+              "mean_response_magnitude": 0.21625,
+              "basis_votes": {
+                "[1, 0]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.865,
+                "[0, 1]": 0.1801,
+                "[2, 0]": 0.1593,
+                "[1, 1]": 0.1379,
+                "[2, 1]": 0.1343,
+                "[0, 2]": 0.1133,
+                "[1, 2]": 0.1071,
+                "[1, -1]": 0.0787
+              },
+              "response_over_floor": 11.05
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.355525,
+              "mean_null": 0.96315,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.876225,
+              "mean_response_magnitude": 0.21412874999999998,
+              "basis_votes": {
+                "[0, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[0, 1]": 0.8762,
+                "[1, 0]": 0.1386,
+                "[1, 1]": 0.1201,
+                "[2, 0]": 0.12,
+                "[0, 2]": 0.1096,
+                "[1, -1]": 0.1022,
+                "[1, 2]": 0.0902,
+                "[2, 1]": 0.0872
+              },
+              "response_over_floor": 10.39
+            }
+          ],
+          "lit": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.9784375000000001,
+              "mean_null": 0.9972,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.151575,
+              "mean_response_magnitude": 0.04216,
+              "basis_votes": {
+                "[2, 1]": 4,
+                "[0, 2]": 4
+              },
+              "mean_kappa_by_basis": {
+                "[2, 1]": 0.1449,
+                "[0, 2]": 0.1405,
+                "[1, 0]": 0.1354,
+                "[2, 0]": 0.1354,
+                "[1, 1]": 0.0797,
+                "[1, 2]": 0.068,
+                "[0, 1]": 0.0588,
+                "[1, -1]": 0.0562
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.9882875,
+              "mean_null": 0.998325,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.159225,
+              "mean_response_magnitude": 0.02635625,
+              "basis_votes": {
+                "[1, -1]": 6,
+                "[2, 0]": 2
+              },
+              "mean_kappa_by_basis": {
+                "[1, -1]": 0.1585,
+                "[2, 0]": 0.1442,
+                "[1, 2]": 0.1383,
+                "[0, 1]": 0.1103,
+                "[1, 0]": 0.1079,
+                "[0, 2]": 0.097,
+                "[2, 1]": 0.0765,
+                "[1, 1]": 0.0569
+              }
+            }
+          ],
+          "shuffle": [
+            {
+              "plane": 1,
+              "n": 8,
+              "mean_residual": 0.689925,
+              "mean_null": 0.9846874999999999,
+              "beats_null_n": 7,
+              "mean_best_kappa": 0.7096875,
+              "mean_response_magnitude": 0.04966875,
+              "basis_votes": {
+                "[1, 0]": 7,
+                "[0, 1]": 1
+              },
+              "mean_kappa_by_basis": {
+                "[1, 0]": 0.6806,
+                "[0, 1]": 0.1978,
+                "[1, 1]": 0.1328,
+                "[2, 0]": 0.1312,
+                "[1, 2]": 0.1097,
+                "[0, 2]": 0.108,
+                "[2, 1]": 0.1053,
+                "[1, -1]": 0.0875
+              }
+            },
+            {
+              "plane": 2,
+              "n": 8,
+              "mean_residual": 0.865325,
+              "mean_null": 0.99395,
+              "beats_null_n": 8,
+              "mean_best_kappa": 0.7255,
+              "mean_response_magnitude": 0.03773875,
+              "basis_votes": {
+                "[0, 1]": 8
+              },
+              "mean_kappa_by_basis": {
+                "[0, 1]": 0.7255,
+                "[1, 0]": 0.1686,
+                "[2, 0]": 0.1265,
+                "[1, 1]": 0.1225,
+                "[2, 1]": 0.1156,
+                "[1, 2]": 0.1121,
+                "[1, -1]": 0.1056,
+                "[0, 2]": 0.0908
+              }
+            }
+          ]
+        },
+        "controls": {
+          "plane1_residual_dark_vs_lit": {
+            "mean_a": 0.340425,
+            "mean_b": 0.9784375000000001,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_best_kappa_dark_vs_lit": {
+            "mean_a": 0.8649625,
+            "mean_b": 0.151575,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_lit": {
+            "mean_a": 0.355525,
+            "mean_b": 0.9882875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_lit": {
+            "mean_a": 0.876225,
+            "mean_b": 0.159225,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_residual_dark_vs_shuffle": {
+            "mean_a": 0.340425,
+            "mean_b": 0.689925,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane1_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.8649625,
+            "mean_b": 0.7096875,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_residual_dark_vs_shuffle": {
+            "mean_a": 0.355525,
+            "mean_b": 0.865325,
+            "pairs_favouring_dark": 8,
+            "n_pairs": 8,
+            "exact_p": 0.0078125
+          },
+          "plane2_best_kappa_dark_vs_shuffle": {
+            "mean_a": 0.876225,
+            "mean_b": 0.7255,
+            "pairs_favouring_dark": 7,
+            "n_pairs": 8,
+            "exact_p": 0.015625
+          }
+        },
+        "untrained_floor": {
+          "plane1_response_magnitude": 0.01957625,
+          "plane2_response_magnitude": 0.020605
+        }
+      }
+    }
+  },
+  "verdicts": {
+    "E1_gru": {
+      "verdict": "PASS",
+      "plane1_basis_votes": {
+        "[1, 1]": 8
+      },
+      "plane1_kappa_1_1": 0.9834,
+      "plane1_kappa_1_0": 0.1362,
+      "plane1_kappa_0_1": 0.1203,
+      "plane1_beats_null": "8/8",
+      "plane2_beats_null": "6/8",
+      "estimator_check": "second plane fails here as expected, so the estimator is not manufacturing circles"
+    },
+    "E1_modular": {
+      "verdict": "PASS",
+      "plane1_basis_votes": {
+        "[1, 1]": 8
+      },
+      "plane1_kappa_1_1": 0.7577,
+      "plane1_kappa_1_0": 0.1578,
+      "plane1_kappa_0_1": 0.1195,
+      "plane1_beats_null": "8/8",
+      "plane2_beats_null": "8/8",
+      "estimator_check": "second plane also passed on a one-degree-of-freedom image; treat v5 with suspicion"
+    },
+    "E2_gru": {
+      "verdict": "FAIL",
+      "plane1_beats_null": "7/8",
+      "plane2_beats_null": "8/8",
+      "plane1_basis_votes": {
+        "[1, 0]": 7,
+        "[0, 1]": 1
+      },
+      "plane2_basis_votes": {
+        "[0, 1]": 8
+      },
+      "plane1_kappa_by_basis": {
+        "[1, 0]": 0.8215,
+        "[0, 1]": 0.2204,
+        "[1, 1]": 0.1347,
+        "[2, 0]": 0.1303,
+        "[2, 1]": 0.122,
+        "[0, 2]": 0.1108,
+        "[1, 2]": 0.1014,
+        "[1, -1]": 0.0822
+      },
+      "plane2_kappa_by_basis": {
+        "[0, 1]": 0.9414,
+        "[1, 0]": 0.1343,
+        "[1, 1]": 0.1232,
+        "[2, 0]": 0.122,
+        "[1, 2]": 0.0892,
+        "[1, -1]": 0.0879,
+        "[0, 2]": 0.0854,
+        "[2, 1]": 0.0834
+      },
+      "all_controls_complete": false
+    },
+    "E2_modular": {
+      "verdict": "FAIL",
+      "plane1_beats_null": "8/8",
+      "plane2_beats_null": "8/8",
+      "plane1_basis_votes": {
+        "[1, 0]": 7,
+        "[0, 1]": 1
+      },
+      "plane2_basis_votes": {
+        "[0, 1]": 8
+      },
+      "plane1_kappa_by_basis": {
+        "[1, 0]": 0.72,
+        "[0, 1]": 0.1842,
+        "[1, 1]": 0.1478,
+        "[2, 0]": 0.1348,
+        "[0, 2]": 0.1169,
+        "[2, 1]": 0.1069,
+        "[1, 2]": 0.0968,
+        "[1, -1]": 0.0893
+      },
+      "plane2_kappa_by_basis": {
+        "[0, 1]": 0.9621,
+        "[1, 0]": 0.1362,
+        "[2, 0]": 0.1308,
+        "[1, 1]": 0.1253,
+        "[1, -1]": 0.1028,
+        "[1, 2]": 0.0812,
+        "[0, 2]": 0.0764,
+        "[2, 1]": 0.0756
+      },
+      "all_controls_complete": false
+    },
+    "E2_v6_gru": {
+      "verdict": "FAIL",
+      "plane1_beats_null": "8/8",
+      "plane2_beats_null": "8/8",
+      "plane1_basis_votes": {
+        "[1, 0]": 8
+      },
+      "plane2_basis_votes": {
+        "[0, 1]": 8
+      },
+      "plane1_kappa_by_basis": {
+        "[1, 0]": 0.9513,
+        "[2, 0]": 0.1489,
+        "[0, 1]": 0.1379,
+        "[1, 1]": 0.1269,
+        "[0, 2]": 0.1173,
+        "[2, 1]": 0.1172,
+        "[1, 2]": 0.1,
+        "[1, -1]": 0.0685
+      },
+      "plane2_kappa_by_basis": {
+        "[0, 1]": 0.9416,
+        "[1, 0]": 0.131,
+        "[1, 1]": 0.1286,
+        "[2, 0]": 0.1258,
+        "[1, 2]": 0.0936,
+        "[1, -1]": 0.0852,
+        "[2, 1]": 0.0746,
+        "[0, 2]": 0.067
+      },
+      "all_controls_complete": false
+    },
+    "E2_v6_modular": {
+      "verdict": "FAIL",
+      "plane1_beats_null": "8/8",
+      "plane2_beats_null": "8/8",
+      "plane1_basis_votes": {
+        "[1, 0]": 8
+      },
+      "plane2_basis_votes": {
+        "[0, 1]": 8
+      },
+      "plane1_kappa_by_basis": {
+        "[1, 0]": 0.865,
+        "[0, 1]": 0.1801,
+        "[2, 0]": 0.1593,
+        "[1, 1]": 0.1379,
+        "[2, 1]": 0.1343,
+        "[0, 2]": 0.1133,
+        "[1, 2]": 0.1071,
+        "[1, -1]": 0.0787
+      },
+      "plane2_kappa_by_basis": {
+        "[0, 1]": 0.8762,
+        "[1, 0]": 0.1386,
+        "[1, 1]": 0.1201,
+        "[2, 0]": 0.12,
+        "[0, 2]": 0.1096,
+        "[1, -1]": 0.1022,
+        "[1, 2]": 0.0902,
+        "[2, 1]": 0.0872
+      },
+      "all_controls_complete": false
+    }
+  }
+}

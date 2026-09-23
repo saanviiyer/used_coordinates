@@ -1,0 +1,92 @@
+{
+  "gate": "prereg_dmc_validity_1_model_predicts_the_arm",
+  "comparator": "frame persistence on blacked-out steps",
+  "domain": "arm",
+  "task": "v7",
+  "n_models": 8,
+  "n_beating_persistence": 0,
+  "verdict": "FAIL",
+  "median_ratio": 1.5776,
+  "rows": [
+    {
+      "tag": "arm_rssm_dark_s0",
+      "model_kind": "rssm",
+      "seed": 0,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.011373,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.5864,
+      "beats_persistence": false
+    },
+    {
+      "tag": "arm_rssm_dark_s1",
+      "model_kind": "rssm",
+      "seed": 1,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.011247,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.5688,
+      "beats_persistence": false
+    },
+    {
+      "tag": "arm_rssm_dark_s2",
+      "model_kind": "rssm",
+      "seed": 2,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.011275,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.5726,
+      "beats_persistence": false
+    },
+    {
+      "tag": "arm_rssm_dark_s3",
+      "model_kind": "rssm",
+      "seed": 3,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.011307,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.5771,
+      "beats_persistence": false
+    },
+    {
+      "tag": "arm_rssm_dark_s4",
+      "model_kind": "rssm",
+      "seed": 4,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.011313,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.578,
+      "beats_persistence": false
+    },
+    {
+      "tag": "arm_rssm_dark_s5",
+      "model_kind": "rssm",
+      "seed": 5,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.011282,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.5737,
+      "beats_persistence": false
+    },
+    {
+      "tag": "arm_rssm_dark_s6",
+      "model_kind": "rssm",
+      "seed": 6,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.011323,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.5793,
+      "beats_persistence": false
+    },
+    {
+      "tag": "arm_rssm_dark_s7",
+      "model_kind": "rssm",
+      "seed": 7,
+      "scored_steps": 1322,
+      "blackout_mse_model": 0.011397,
+      "blackout_mse_persistence": 0.007169,
+      "ratio_model_over_persistence": 1.5896,
+      "beats_persistence": false
+    }
+  ]
+}

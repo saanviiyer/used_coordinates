@@ -1,0 +1,477 @@
+{
+  "variant": "v7",
+  "rows": [
+    {
+      "tag": "arm_gru_dark_s0",
+      "model_kind": "gru",
+      "cond": "dark",
+      "seed": 0,
+      "variant": "v7",
+      "discovery_uses_joint_labels": false,
+      "joints": [
+        {
+          "joint": 1,
+          "translation_score": 0.7207,
+          "response_mean_norm": 0.20361,
+          "response_spread": 0.28253,
+          "rotation": {
+            "gain": -2.095,
+            "residual": 0.2784,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 5.775,
+            "residual": 0.1353,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.1431,
+          "response_var_frac": [
+            0.4467,
+            0.285,
+            0.1159,
+            0.0562
+          ]
+        },
+        {
+          "joint": 2,
+          "translation_score": 0.8546,
+          "response_mean_norm": 0.19167,
+          "response_spread": 0.2243,
+          "rotation": {
+            "gain": -2.08,
+            "residual": 0.3894,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 4.87,
+            "residual": 0.0805,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.3089,
+          "response_var_frac": [
+            0.5272,
+            0.25,
+            0.0944,
+            0.0334
+          ]
+        }
+      ],
+      "seconds": 90.9
+    },
+    {
+      "tag": "arm_gru_dark_s1",
+      "model_kind": "gru",
+      "cond": "dark",
+      "seed": 1,
+      "variant": "v7",
+      "discovery_uses_joint_labels": false,
+      "joints": [
+        {
+          "joint": 1,
+          "translation_score": 0.7874,
+          "response_mean_norm": 0.19964,
+          "response_spread": 0.25353,
+          "rotation": {
+            "gain": 2.155,
+            "residual": 0.3433,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 5.395,
+            "residual": 0.1159,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.2274,
+          "response_var_frac": [
+            0.4903,
+            0.2337,
+            0.1112,
+            0.0593
+          ]
+        },
+        {
+          "joint": 2,
+          "translation_score": 0.867,
+          "response_mean_norm": 0.18705,
+          "response_spread": 0.21575,
+          "rotation": {
+            "gain": 2.3,
+            "residual": 0.3474,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 4.86,
+            "residual": 0.0837,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.2637,
+          "response_var_frac": [
+            0.5418,
+            0.229,
+            0.0964,
+            0.0448
+          ]
+        }
+      ],
+      "seconds": 110.1
+    },
+    {
+      "tag": "arm_gru_dark_s2",
+      "model_kind": "gru",
+      "cond": "dark",
+      "seed": 2,
+      "variant": "v7",
+      "discovery_uses_joint_labels": false,
+      "joints": [
+        {
+          "joint": 1,
+          "translation_score": 0.7496,
+          "response_mean_norm": 0.21094,
+          "response_spread": 0.28141,
+          "rotation": {
+            "gain": 1.905,
+            "residual": 0.3631,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 5.79,
+            "residual": 0.135,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.2281,
+          "response_var_frac": [
+            0.4594,
+            0.2555,
+            0.1305,
+            0.0542
+          ]
+        },
+        {
+          "joint": 2,
+          "translation_score": 0.865,
+          "response_mean_norm": 0.18178,
+          "response_spread": 0.21016,
+          "rotation": {
+            "gain": 2.23,
+            "residual": 0.3772,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 4.63,
+            "residual": 0.0726,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.3045,
+          "response_var_frac": [
+            0.5416,
+            0.2378,
+            0.0835,
+            0.0316
+          ]
+        }
+      ],
+      "seconds": 19.5
+    },
+    {
+      "tag": "arm_gru_dark_s3",
+      "model_kind": "gru",
+      "cond": "dark",
+      "seed": 3,
+      "variant": "v7",
+      "discovery_uses_joint_labels": false,
+      "joints": [
+        {
+          "joint": 1,
+          "translation_score": 0.6988,
+          "response_mean_norm": 0.21849,
+          "response_spread": 0.31266,
+          "rotation": {
+            "gain": 2.105,
+            "residual": 0.307,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 6.435,
+            "residual": 0.1219,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.1851,
+          "response_var_frac": [
+            0.4254,
+            0.2818,
+            0.121,
+            0.0624
+          ]
+        },
+        {
+          "joint": 2,
+          "translation_score": 0.8454,
+          "response_mean_norm": 0.1765,
+          "response_spread": 0.20877,
+          "rotation": {
+            "gain": 2.435,
+            "residual": 0.292,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 4.86,
+            "residual": 0.0568,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.2353,
+          "response_var_frac": [
+            0.5369,
+            0.2202,
+            0.0996,
+            0.0422
+          ]
+        }
+      ],
+      "seconds": 20.7
+    },
+    {
+      "tag": "arm_gru_dark_s4",
+      "model_kind": "gru",
+      "cond": "dark",
+      "seed": 4,
+      "variant": "v7",
+      "discovery_uses_joint_labels": false,
+      "joints": [
+        {
+          "joint": 1,
+          "translation_score": 0.7704,
+          "response_mean_norm": 0.2062,
+          "response_spread": 0.26763,
+          "rotation": {
+            "gain": -1.955,
+            "residual": 0.3259,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 5.635,
+            "residual": 0.1446,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.1813,
+          "response_var_frac": [
+            0.471,
+            0.2463,
+            0.1211,
+            0.0625
+          ]
+        },
+        {
+          "joint": 2,
+          "translation_score": 0.9012,
+          "response_mean_norm": 0.18435,
+          "response_spread": 0.20455,
+          "rotation": {
+            "gain": 2.255,
+            "residual": 0.3656,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 4.88,
+            "residual": 0.0607,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.3049,
+          "response_var_frac": [
+            0.5573,
+            0.2291,
+            0.0783,
+            0.0341
+          ]
+        }
+      ],
+      "seconds": 18.5
+    },
+    {
+      "tag": "arm_gru_dark_s5",
+      "model_kind": "gru",
+      "cond": "dark",
+      "seed": 5,
+      "variant": "v7",
+      "discovery_uses_joint_labels": false,
+      "joints": [
+        {
+          "joint": 1,
+          "translation_score": 0.6775,
+          "response_mean_norm": 0.21873,
+          "response_spread": 0.32285,
+          "rotation": {
+            "gain": 2.115,
+            "residual": 0.2846,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 6.455,
+            "residual": 0.1393,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.1453,
+          "response_var_frac": [
+            0.4176,
+            0.265,
+            0.1108,
+            0.0739
+          ]
+        },
+        {
+          "joint": 2,
+          "translation_score": 0.8067,
+          "response_mean_norm": 0.182,
+          "response_spread": 0.22561,
+          "rotation": {
+            "gain": -2.305,
+            "residual": 0.3689,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 4.84,
+            "residual": 0.0687,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.3002,
+          "response_var_frac": [
+            0.5126,
+            0.272,
+            0.0882,
+            0.0394
+          ]
+        }
+      ],
+      "seconds": 17.1
+    },
+    {
+      "tag": "arm_gru_dark_s6",
+      "model_kind": "gru",
+      "cond": "dark",
+      "seed": 6,
+      "variant": "v7",
+      "discovery_uses_joint_labels": false,
+      "joints": [
+        {
+          "joint": 1,
+          "translation_score": 0.7521,
+          "response_mean_norm": 0.19822,
+          "response_spread": 0.26356,
+          "rotation": {
+            "gain": -2.195,
+            "residual": 0.2976,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 5.605,
+            "residual": 0.1123,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.1853,
+          "response_var_frac": [
+            0.4603,
+            0.2645,
+            0.124,
+            0.0535
+          ]
+        },
+        {
+          "joint": 2,
+          "translation_score": 0.8481,
+          "response_mean_norm": 0.1813,
+          "response_spread": 0.21377,
+          "rotation": {
+            "gain": 2.265,
+            "residual": 0.3653,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 4.725,
+            "residual": 0.0882,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.277,
+          "response_var_frac": [
+            0.5299,
+            0.222,
+            0.0863,
+            0.0506
+          ]
+        }
+      ],
+      "seconds": 17.5
+    },
+    {
+      "tag": "arm_gru_dark_s7",
+      "model_kind": "gru",
+      "cond": "dark",
+      "seed": 7,
+      "variant": "v7",
+      "discovery_uses_joint_labels": false,
+      "joints": [
+        {
+          "joint": 1,
+          "translation_score": 0.7638,
+          "response_mean_norm": 0.19709,
+          "response_spread": 0.25803,
+          "rotation": {
+            "gain": 2.1,
+            "residual": 0.4107,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 5.215,
+            "residual": 0.0994,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.3113,
+          "response_var_frac": [
+            0.4651,
+            0.2489,
+            0.1229,
+            0.0647
+          ]
+        },
+        {
+          "joint": 2,
+          "translation_score": 0.8184,
+          "response_mean_norm": 0.18106,
+          "response_spread": 0.22125,
+          "rotation": {
+            "gain": 2.18,
+            "residual": 0.3761,
+            "gain_at_grid_edge": false
+          },
+          "translation": {
+            "gain": 4.49,
+            "residual": 0.074,
+            "gain_at_grid_edge": false
+          },
+          "family": "translation",
+          "margin": 0.3022,
+          "response_var_frac": [
+            0.5029,
+            0.2497,
+            0.0924,
+            0.053
+          ]
+        }
+      ],
+      "seconds": 17.8
+    }
+  ]
+}

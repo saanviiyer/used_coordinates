@@ -1,0 +1,52 @@
+{
+  "gate": "prereg_dmc_validity_1_model_predicts_the_arm",
+  "comparator": "frame persistence on blacked-out steps",
+  "domain": "reacher",
+  "task": "easy",
+  "n_models": 4,
+  "n_beating_persistence": 0,
+  "verdict": "FAIL",
+  "median_ratio": 3.1866,
+  "rows": [
+    {
+      "tag": "dmc_rssm_dark_s0",
+      "model_kind": "rssm",
+      "seed": 0,
+      "scored_steps": 1366,
+      "blackout_mse_model": 0.010195,
+      "blackout_mse_persistence": 0.003194,
+      "ratio_model_over_persistence": 3.1915,
+      "beats_persistence": false
+    },
+    {
+      "tag": "dmc_rssm_dark_s1",
+      "model_kind": "rssm",
+      "seed": 1,
+      "scored_steps": 1366,
+      "blackout_mse_model": 0.010171,
+      "blackout_mse_persistence": 0.003194,
+      "ratio_model_over_persistence": 3.184,
+      "beats_persistence": false
+    },
+    {
+      "tag": "dmc_rssm_dark_s2",
+      "model_kind": "rssm",
+      "seed": 2,
+      "scored_steps": 1366,
+      "blackout_mse_model": 0.01015,
+      "blackout_mse_persistence": 0.003194,
+      "ratio_model_over_persistence": 3.1775,
+      "beats_persistence": false
+    },
+    {
+      "tag": "dmc_rssm_dark_s3",
+      "model_kind": "rssm",
+      "seed": 3,
+      "scored_steps": 1366,
+      "blackout_mse_model": 0.010188,
+      "blackout_mse_persistence": 0.003194,
+      "ratio_model_over_persistence": 3.1892,
+      "beats_persistence": false
+    }
+  ]
+}

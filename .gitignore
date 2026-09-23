@@ -1,0 +1,78 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+logs/*.log
+runs/**/*.pt
+
+# --- Standard publish exclusions ---
+# Environments and caches
+.venv*/
+*venv*/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+**/.pytest_cache/
+*.egg-info/
+build/
+node_modules/
+.DS_Store
+.Rhistory
+
+# Secrets
+.env*
+*.pem
+*.key
+credentials*
+token*.json
+keys/
+cookies*
+*.session
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.h5
+*.onnx
+weights/
+checkpoints/
+
+# Raw and licensed data
+data/
+external/
+cache/
+ai-rcp-data/
+*.edf
+*.bdf
+*.nii
+*.nii.gz
+*.dcm
+*.mgz
+
+# Large run outputs
+logs/
+tmp/
+outputs/
+*.log
+*.npz
+*.npy
+*.zip
+
+# Agent and planning files
+HARNESS.md
+.mon_seen
+*PLAN*.md
+*SPINE*.md
+*_SCOPE.md
+PROJECT_REPORT*.md
+notes/
+scratch/
+
+# Planning notes and backups
+S1_SCREEN.md
+S1_TARGET_COSTING.md
+*.bak-*

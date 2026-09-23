@@ -1,0 +1,90 @@
+{
+  "kind": "rssm",
+  "domain": "reacher",
+  "task": "easy",
+  "kl_binding_fraction": 0.989,
+  "kl_raw_max": 0.08715,
+  "kl_floor": 0.016,
+  "cond": "dark",
+  "seed": 1,
+  "steps": 1000,
+  "params": 3747520,
+  "image": [
+    64,
+    64
+  ],
+  "action_dim": 2,
+  "history": [
+    {
+      "step": 100,
+      "recon": 0.049615804105997086,
+      "kl_raw": 0.00619056262075901,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 200,
+      "recon": 0.04843959957361221,
+      "kl_raw": 0.007904081605374813,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 300,
+      "recon": 0.04636000096797943,
+      "kl_raw": 0.0075630671344697475,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 400,
+      "recon": 0.04433006793260574,
+      "kl_raw": 0.008172392845153809,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 500,
+      "recon": 0.04666357859969139,
+      "kl_raw": 0.005329161416739225,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 600,
+      "recon": 0.04511729255318642,
+      "kl_raw": 0.005174603778868914,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 700,
+      "recon": 0.04518105089664459,
+      "kl_raw": 0.005189202725887299,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 800,
+      "recon": 0.048366982489824295,
+      "kl_raw": 0.005663059186190367,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 900,
+      "recon": 0.04838341847062111,
+      "kl_raw": 0.005302754696458578,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    },
+    {
+      "step": 1000,
+      "recon": 0.045654237270355225,
+      "kl_raw": 0.004776935558766127,
+      "kl_floor": 0.016,
+      "kl_clamped": true
+    }
+  ],
+  "wall_s": 4458.323565721512
+}

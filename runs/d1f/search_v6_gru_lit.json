@@ -1,0 +1,1826 @@
+{
+  "mode": "search",
+  "variant": "v6",
+  "horizon": 4,
+  "probe": 0.4,
+  "deep": 6,
+  "untrained": false,
+  "rows": [
+    {
+      "tag": "arm_gru_lit_s0",
+      "model_kind": "gru",
+      "cond": "lit",
+      "seed": 0,
+      "variant": "v6",
+      "mode": "search",
+      "order": [
+        0,
+        1
+      ],
+      "horizon": 4,
+      "probe": 0.4,
+      "deep": 6,
+      "untrained": false,
+      "discovery_uses_joint_labels": false,
+      "scoring_uses_joint_labels": true,
+      "planes": [
+        {
+          "joint": 1,
+          "response_var_frac": [
+            0.8571,
+            0.1024,
+            0.0128,
+            0.0082
+          ],
+          "response_magnitude": 0.01488,
+          "gain": 7.005,
+          "residual": 0.994,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 0.9999,
+          "null_residual_min": 0.9982,
+          "beats_null": true,
+          "cross_action_residual": 0.9999,
+          "cross_action_gain": 0.825,
+          "self_phase_shift_rad": 0.0214,
+          "crosstalk_phase_shift_rad": 0.0143,
+          "search_cost": 0.9942,
+          "bases": [
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.3202,
+              "winding": -1
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1497,
+              "winding": -1
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1362,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.1007,
+              "winding": 2
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.087,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.0735,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0605,
+              "winding": 2
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.041,
+              "winding": 2
+            }
+          ],
+          "best_basis": [
+            1,
+            0
+          ],
+          "best_kappa": 0.3202,
+          "best_winding": -1,
+          "gain_over_winding": -7.005,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": -1.8575170540921466,
+            "iqr_local_slope": 2.8863203635704386,
+            "min_local_slope": -4.835519509233384,
+            "max_local_slope": 0.944984722539804
+          }
+        },
+        {
+          "joint": 2,
+          "response_var_frac": [
+            0.7767,
+            0.1267,
+            0.0622,
+            0.0088
+          ],
+          "response_magnitude": 0.00775,
+          "gain": 8.07,
+          "residual": 0.9973,
+          "gain_at_grid_edge": true,
+          "null_residual_median": 0.9997,
+          "null_residual_min": 0.9988,
+          "beats_null": true,
+          "cross_action_residual": 0.9999,
+          "cross_action_gain": 2.62,
+          "self_phase_shift_rad": 0.0101,
+          "crosstalk_phase_shift_rad": 0.0078,
+          "search_cost": 0.9978,
+          "bases": [
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.1653,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1564,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.1301,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.1214,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1167,
+              "winding": -1
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1085,
+              "winding": 1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0902,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.0843,
+              "winding": -2
+            }
+          ],
+          "best_basis": [
+            1,
+            2
+          ],
+          "best_kappa": 0.1653,
+          "best_winding": 2,
+          "gain_over_winding": 4.035,
+          "uniformity": {
+            "n_bins_used": 10,
+            "median_local_slope": 2.7973875714548995,
+            "iqr_local_slope": 1.6652390627616942,
+            "min_local_slope": -1.5055624310380413,
+            "max_local_slope": 6.943203484887991
+          }
+        }
+      ],
+      "plane_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "seconds": 98.4
+    },
+    {
+      "tag": "arm_gru_lit_s1",
+      "model_kind": "gru",
+      "cond": "lit",
+      "seed": 1,
+      "variant": "v6",
+      "mode": "search",
+      "order": [
+        0,
+        1
+      ],
+      "horizon": 4,
+      "probe": 0.4,
+      "deep": 6,
+      "untrained": false,
+      "discovery_uses_joint_labels": false,
+      "scoring_uses_joint_labels": true,
+      "planes": [
+        {
+          "joint": 1,
+          "response_var_frac": [
+            0.9791,
+            0.0101,
+            0.0034,
+            0.0031
+          ],
+          "response_magnitude": 0.03206,
+          "gain": 4.22,
+          "residual": 0.9888,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 0.9993,
+          "null_residual_min": 0.9979,
+          "beats_null": true,
+          "cross_action_residual": 0.9997,
+          "cross_action_gain": 0.42,
+          "self_phase_shift_rad": 0.0261,
+          "crosstalk_phase_shift_rad": 0.0044,
+          "search_cost": 0.9888,
+          "bases": [
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.2146,
+              "winding": -1
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1736,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.171,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1546,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.1053,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.1038,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.0913,
+              "winding": 2
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.06,
+              "winding": -1
+            }
+          ],
+          "best_basis": [
+            1,
+            0
+          ],
+          "best_kappa": 0.2146,
+          "best_winding": -1,
+          "gain_over_winding": -4.22,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": -0.35098123733936937,
+            "iqr_local_slope": 3.7391325332139695,
+            "min_local_slope": -5.405143973340396,
+            "max_local_slope": 5.811395004422397
+          }
+        },
+        {
+          "joint": 2,
+          "response_var_frac": [
+            0.9662,
+            0.0256,
+            0.0033,
+            0.0019
+          ],
+          "response_magnitude": 0.01624,
+          "gain": 4.66,
+          "residual": 0.9944,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 0.9998,
+          "null_residual_min": 0.9993,
+          "beats_null": true,
+          "cross_action_residual": 0.9997,
+          "cross_action_gain": 1.51,
+          "self_phase_shift_rad": 0.0117,
+          "crosstalk_phase_shift_rad": 0.0063,
+          "search_cost": 0.9944,
+          "bases": [
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1246,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.1229,
+              "winding": -1
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1143,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.0988,
+              "winding": -2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.0988,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0798,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.0666,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.0521,
+              "winding": 2
+            }
+          ],
+          "best_basis": [
+            0,
+            2
+          ],
+          "best_kappa": 0.1246,
+          "best_winding": 2,
+          "gain_over_winding": 2.33,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": 2.71149815875353,
+            "iqr_local_slope": 7.0603618418544825,
+            "min_local_slope": -4.55107408870905,
+            "max_local_slope": 7.644426190937543
+          }
+        }
+      ],
+      "plane_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "seconds": 99.6
+    },
+    {
+      "tag": "arm_gru_lit_s2",
+      "model_kind": "gru",
+      "cond": "lit",
+      "seed": 2,
+      "variant": "v6",
+      "mode": "search",
+      "order": [
+        0,
+        1
+      ],
+      "horizon": 4,
+      "probe": 0.4,
+      "deep": 6,
+      "untrained": false,
+      "discovery_uses_joint_labels": false,
+      "scoring_uses_joint_labels": true,
+      "planes": [
+        {
+          "joint": 1,
+          "response_var_frac": [
+            0.9571,
+            0.0348,
+            0.0029,
+            0.0016
+          ],
+          "response_magnitude": 0.01063,
+          "gain": -7.06,
+          "residual": 0.9872,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 0.9999,
+          "null_residual_min": 0.9999,
+          "beats_null": true,
+          "cross_action_residual": 1.0,
+          "cross_action_gain": -0.005,
+          "self_phase_shift_rad": 0.0368,
+          "crosstalk_phase_shift_rad": 0.0142,
+          "search_cost": 0.9875,
+          "bases": [
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1445,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1273,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1273,
+              "winding": 1
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1143,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.1075,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0828,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.0606,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0591,
+              "winding": -2
+            }
+          ],
+          "best_basis": [
+            2,
+            1
+          ],
+          "best_kappa": 0.1445,
+          "best_winding": 2,
+          "gain_over_winding": -3.53,
+          "uniformity": {
+            "n_bins_used": 10,
+            "median_local_slope": -0.9783889758642847,
+            "iqr_local_slope": 2.3511057857918116,
+            "min_local_slope": -6.372579511524781,
+            "max_local_slope": 2.175963874589194
+          }
+        },
+        {
+          "joint": 2,
+          "response_var_frac": [
+            0.9889,
+            0.0047,
+            0.0037,
+            0.0012
+          ],
+          "response_magnitude": 0.01035,
+          "gain": -4.735,
+          "residual": 0.9975,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 1.0,
+          "null_residual_min": 0.9997,
+          "beats_null": true,
+          "cross_action_residual": 0.9984,
+          "cross_action_gain": -2.98,
+          "self_phase_shift_rad": 0.0056,
+          "crosstalk_phase_shift_rad": 0.0028,
+          "search_cost": 0.9975,
+          "bases": [
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1529,
+              "winding": -2
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1323,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1102,
+              "winding": -2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1102,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0881,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.077,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.0752,
+              "winding": -2
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0737,
+              "winding": 1
+            }
+          ],
+          "best_basis": [
+            0,
+            2
+          ],
+          "best_kappa": 0.1529,
+          "best_winding": -2,
+          "gain_over_winding": 2.368,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": -1.2120806402023643,
+            "iqr_local_slope": 5.825292359954036,
+            "min_local_slope": -5.9445557118374595,
+            "max_local_slope": 4.007721389622062
+          }
+        }
+      ],
+      "plane_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "seconds": 99.1
+    },
+    {
+      "tag": "arm_gru_lit_s3",
+      "model_kind": "gru",
+      "cond": "lit",
+      "seed": 3,
+      "variant": "v6",
+      "mode": "search",
+      "order": [
+        0,
+        1
+      ],
+      "horizon": 4,
+      "probe": 0.4,
+      "deep": 6,
+      "untrained": false,
+      "discovery_uses_joint_labels": false,
+      "scoring_uses_joint_labels": true,
+      "planes": [
+        {
+          "joint": 1,
+          "response_var_frac": [
+            0.8728,
+            0.0769,
+            0.0165,
+            0.0077
+          ],
+          "response_magnitude": 0.0086,
+          "gain": 8.07,
+          "residual": 0.9928,
+          "gain_at_grid_edge": true,
+          "null_residual_median": 0.9998,
+          "null_residual_min": 0.9981,
+          "beats_null": true,
+          "cross_action_residual": 1.0,
+          "cross_action_gain": -0.13,
+          "self_phase_shift_rad": 0.0208,
+          "crosstalk_phase_shift_rad": 0.0212,
+          "search_cost": 0.9936,
+          "bases": [
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1576,
+              "winding": -2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1576,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1563,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.109,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.102,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.0751,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0637,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0621,
+              "winding": 2
+            }
+          ],
+          "best_basis": [
+            1,
+            0
+          ],
+          "best_kappa": 0.1576,
+          "best_winding": -2,
+          "gain_over_winding": -4.035,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": -1.0097832685324128,
+            "iqr_local_slope": 4.304266875289041,
+            "min_local_slope": -6.670285289413148,
+            "max_local_slope": 5.203403172635054
+          }
+        },
+        {
+          "joint": 2,
+          "response_var_frac": [
+            0.9315,
+            0.0316,
+            0.0149,
+            0.0077
+          ],
+          "response_magnitude": 0.01101,
+          "gain": 6.355,
+          "residual": 0.9972,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 0.9999,
+          "null_residual_min": 0.9997,
+          "beats_null": true,
+          "cross_action_residual": 0.9995,
+          "cross_action_gain": -3.6,
+          "self_phase_shift_rad": 0.0057,
+          "crosstalk_phase_shift_rad": 0.0038,
+          "search_cost": 0.9972,
+          "bases": [
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.1333,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.1222,
+              "winding": -2
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1084,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.1067,
+              "winding": -2
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.0997,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.0948,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.0948,
+              "winding": 1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.073,
+              "winding": -1
+            }
+          ],
+          "best_basis": [
+            1,
+            -1
+          ],
+          "best_kappa": 0.1333,
+          "best_winding": 1,
+          "gain_over_winding": 6.355,
+          "uniformity": {
+            "n_bins_used": 9,
+            "median_local_slope": 1.385065371135522,
+            "iqr_local_slope": 2.798636255087281,
+            "min_local_slope": -1.1749194657598268,
+            "max_local_slope": 3.1069971728060626
+          }
+        }
+      ],
+      "plane_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "seconds": 101.2
+    },
+    {
+      "tag": "arm_gru_lit_s4",
+      "model_kind": "gru",
+      "cond": "lit",
+      "seed": 4,
+      "variant": "v6",
+      "mode": "search",
+      "order": [
+        0,
+        1
+      ],
+      "horizon": 4,
+      "probe": 0.4,
+      "deep": 6,
+      "untrained": false,
+      "discovery_uses_joint_labels": false,
+      "scoring_uses_joint_labels": true,
+      "planes": [
+        {
+          "joint": 1,
+          "response_var_frac": [
+            0.9586,
+            0.0217,
+            0.009,
+            0.0044
+          ],
+          "response_magnitude": 0.01371,
+          "gain": -3.735,
+          "residual": 0.9954,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 0.9993,
+          "null_residual_min": 0.9978,
+          "beats_null": true,
+          "cross_action_residual": 1.0,
+          "cross_action_gain": 0.175,
+          "self_phase_shift_rad": 0.0093,
+          "crosstalk_phase_shift_rad": 0.0014,
+          "search_cost": 0.9954,
+          "bases": [
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1484,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1234,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1234,
+              "winding": 1
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.112,
+              "winding": 1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.1044,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.1021,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0649,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.0406,
+              "winding": 2
+            }
+          ],
+          "best_basis": [
+            0,
+            2
+          ],
+          "best_kappa": 0.1484,
+          "best_winding": 2,
+          "gain_over_winding": -1.867,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": -1.2116173598031383,
+            "iqr_local_slope": 4.4008533603293385,
+            "min_local_slope": -7.144265744375815,
+            "max_local_slope": 5.380450458947894
+          }
+        },
+        {
+          "joint": 2,
+          "response_var_frac": [
+            0.9418,
+            0.0317,
+            0.0148,
+            0.0035
+          ],
+          "response_magnitude": 0.00625,
+          "gain": -8.07,
+          "residual": 0.9952,
+          "gain_at_grid_edge": true,
+          "null_residual_median": 1.0,
+          "null_residual_min": 0.9997,
+          "beats_null": true,
+          "cross_action_residual": 0.9999,
+          "cross_action_gain": 0.975,
+          "self_phase_shift_rad": 0.0046,
+          "crosstalk_phase_shift_rad": 0.0122,
+          "search_cost": 0.996,
+          "bases": [
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.14,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1357,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1276,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1276,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0997,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.0957,
+              "winding": 2
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0923,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.0808,
+              "winding": 2
+            }
+          ],
+          "best_basis": [
+            0,
+            2
+          ],
+          "best_kappa": 0.14,
+          "best_winding": 2,
+          "gain_over_winding": -4.035,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": 0.19250908424966826,
+            "iqr_local_slope": 5.974572715405769,
+            "min_local_slope": -3.9984691524475307,
+            "max_local_slope": 8.246506136133863
+          }
+        }
+      ],
+      "plane_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "seconds": 99.7
+    },
+    {
+      "tag": "arm_gru_lit_s5",
+      "model_kind": "gru",
+      "cond": "lit",
+      "seed": 5,
+      "variant": "v6",
+      "mode": "search",
+      "order": [
+        0,
+        1
+      ],
+      "horizon": 4,
+      "probe": 0.4,
+      "deep": 6,
+      "untrained": false,
+      "discovery_uses_joint_labels": false,
+      "scoring_uses_joint_labels": true,
+      "planes": [
+        {
+          "joint": 1,
+          "response_var_frac": [
+            0.9016,
+            0.0431,
+            0.0192,
+            0.0143
+          ],
+          "response_magnitude": 0.00796,
+          "gain": 8.07,
+          "residual": 0.9944,
+          "gain_at_grid_edge": true,
+          "null_residual_median": 0.9999,
+          "null_residual_min": 0.9997,
+          "beats_null": true,
+          "cross_action_residual": 1.0,
+          "cross_action_gain": -0.24,
+          "self_phase_shift_rad": 0.0166,
+          "crosstalk_phase_shift_rad": 0.0114,
+          "search_cost": 0.9952,
+          "bases": [
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.15,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.145,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1254,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.1133,
+              "winding": -2
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.0956,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.0723,
+              "winding": -1
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.0558,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.047,
+              "winding": -2
+            }
+          ],
+          "best_basis": [
+            0,
+            1
+          ],
+          "best_kappa": 0.15,
+          "best_winding": -1,
+          "gain_over_winding": -8.07,
+          "uniformity": {
+            "n_bins_used": 10,
+            "median_local_slope": 1.1485543392408588,
+            "iqr_local_slope": 2.7607440551975024,
+            "min_local_slope": -5.588565692686616,
+            "max_local_slope": 4.207487618714439
+          }
+        },
+        {
+          "joint": 2,
+          "response_var_frac": [
+            0.9204,
+            0.0482,
+            0.0135,
+            0.0073
+          ],
+          "response_magnitude": 0.00604,
+          "gain": -6.49,
+          "residual": 0.9981,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 0.9999,
+          "null_residual_min": 0.9992,
+          "beats_null": true,
+          "cross_action_residual": 1.0,
+          "cross_action_gain": 0.905,
+          "self_phase_shift_rad": 0.0265,
+          "crosstalk_phase_shift_rad": 0.0143,
+          "search_cost": 0.9981,
+          "bases": [
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.2094,
+              "winding": 1
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1639,
+              "winding": -2
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.1377,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.1263,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.1225,
+              "winding": 1
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1131,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1041,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.0782,
+              "winding": -2
+            }
+          ],
+          "best_basis": [
+            1,
+            0
+          ],
+          "best_kappa": 0.2094,
+          "best_winding": 1,
+          "gain_over_winding": -6.49,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": 0.524266709270954,
+            "iqr_local_slope": 5.099790675046514,
+            "min_local_slope": -4.86397521617741,
+            "max_local_slope": 6.14495220283768
+          }
+        }
+      ],
+      "plane_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "seconds": 100.5
+    },
+    {
+      "tag": "arm_gru_lit_s6",
+      "model_kind": "gru",
+      "cond": "lit",
+      "seed": 6,
+      "variant": "v6",
+      "mode": "search",
+      "order": [
+        0,
+        1
+      ],
+      "horizon": 4,
+      "probe": 0.4,
+      "deep": 6,
+      "untrained": false,
+      "discovery_uses_joint_labels": false,
+      "scoring_uses_joint_labels": true,
+      "planes": [
+        {
+          "joint": 1,
+          "response_var_frac": [
+            0.8654,
+            0.1071,
+            0.0092,
+            0.0056
+          ],
+          "response_magnitude": 0.0361,
+          "gain": -5.1,
+          "residual": 0.9971,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 1.0,
+          "null_residual_min": 0.9999,
+          "beats_null": true,
+          "cross_action_residual": 1.0,
+          "cross_action_gain": 0.225,
+          "self_phase_shift_rad": 0.0291,
+          "crosstalk_phase_shift_rad": 0.0421,
+          "search_cost": 0.9971,
+          "bases": [
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1462,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.1358,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1345,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1258,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1258,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.1125,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0748,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0575,
+              "winding": -1
+            }
+          ],
+          "best_basis": [
+            0,
+            2
+          ],
+          "best_kappa": 0.1462,
+          "best_winding": 2,
+          "gain_over_winding": -2.55,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": -0.3007847955639807,
+            "iqr_local_slope": 4.617692365836873,
+            "min_local_slope": -3.055530959133342,
+            "max_local_slope": 5.86618812799422
+          }
+        },
+        {
+          "joint": 2,
+          "response_var_frac": [
+            0.8191,
+            0.0617,
+            0.0482,
+            0.03
+          ],
+          "response_magnitude": 0.03136,
+          "gain": 7.0,
+          "residual": 0.9986,
+          "gain_at_grid_edge": false,
+          "null_residual_median": 0.9999,
+          "null_residual_min": 0.9997,
+          "beats_null": true,
+          "cross_action_residual": 0.9999,
+          "cross_action_gain": 2.07,
+          "self_phase_shift_rad": 0.0144,
+          "crosstalk_phase_shift_rad": 0.0342,
+          "search_cost": 0.9986,
+          "bases": [
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1939,
+              "winding": 2
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1347,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1311,
+              "winding": -2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1311,
+              "winding": -1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0831,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0694,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.0533,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.0353,
+              "winding": 2
+            }
+          ],
+          "best_basis": [
+            2,
+            1
+          ],
+          "best_kappa": 0.1939,
+          "best_winding": 2,
+          "gain_over_winding": 3.5,
+          "uniformity": {
+            "n_bins_used": 10,
+            "median_local_slope": 1.1632553226340667,
+            "iqr_local_slope": 2.8594285715993237,
+            "min_local_slope": -8.44391863888725,
+            "max_local_slope": 3.4760034529806183
+          }
+        }
+      ],
+      "plane_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "seconds": 100.3
+    },
+    {
+      "tag": "arm_gru_lit_s7",
+      "model_kind": "gru",
+      "cond": "lit",
+      "seed": 7,
+      "variant": "v6",
+      "mode": "search",
+      "order": [
+        0,
+        1
+      ],
+      "horizon": 4,
+      "probe": 0.4,
+      "deep": 6,
+      "untrained": false,
+      "discovery_uses_joint_labels": false,
+      "scoring_uses_joint_labels": true,
+      "planes": [
+        {
+          "joint": 1,
+          "response_var_frac": [
+            0.9501,
+            0.0416,
+            0.0033,
+            0.0017
+          ],
+          "response_magnitude": 0.02376,
+          "gain": -8.07,
+          "residual": 0.9701,
+          "gain_at_grid_edge": true,
+          "null_residual_median": 0.9987,
+          "null_residual_min": 0.9986,
+          "beats_null": true,
+          "cross_action_residual": 1.0,
+          "cross_action_gain": -0.69,
+          "self_phase_shift_rad": 0.0251,
+          "crosstalk_phase_shift_rad": 0.0022,
+          "search_cost": 0.9754,
+          "bases": [
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.1588,
+              "winding": 2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.1588,
+              "winding": 1
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1572,
+              "winding": 2
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.1174,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.1109,
+              "winding": -2
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.0961,
+              "winding": -2
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.0858,
+              "winding": 1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.0818,
+              "winding": 1
+            }
+          ],
+          "best_basis": [
+            1,
+            0
+          ],
+          "best_kappa": 0.1588,
+          "best_winding": 2,
+          "gain_over_winding": -4.035,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": -1.8117170912086238,
+            "iqr_local_slope": 4.37576818312767,
+            "min_local_slope": -7.166868242987717,
+            "max_local_slope": 3.922323551173152
+          }
+        },
+        {
+          "joint": 2,
+          "response_var_frac": [
+            0.9676,
+            0.0197,
+            0.0052,
+            0.0022
+          ],
+          "response_magnitude": 0.0122,
+          "gain": -8.07,
+          "residual": 0.9961,
+          "gain_at_grid_edge": true,
+          "null_residual_median": 0.9998,
+          "null_residual_min": 0.9996,
+          "beats_null": true,
+          "cross_action_residual": 0.9996,
+          "cross_action_gain": -1.73,
+          "self_phase_shift_rad": 0.0361,
+          "crosstalk_phase_shift_rad": 0.0012,
+          "search_cost": 0.9966,
+          "bases": [
+            {
+              "basis": [
+                1,
+                0
+              ],
+              "kappa": 0.2532,
+              "winding": 1
+            },
+            {
+              "basis": [
+                0,
+                1
+              ],
+              "kappa": 0.1628,
+              "winding": 1
+            },
+            {
+              "basis": [
+                2,
+                1
+              ],
+              "kappa": 0.1331,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                -1
+              ],
+              "kappa": 0.1308,
+              "winding": -1
+            },
+            {
+              "basis": [
+                1,
+                1
+              ],
+              "kappa": 0.1295,
+              "winding": -2
+            },
+            {
+              "basis": [
+                0,
+                2
+              ],
+              "kappa": 0.0994,
+              "winding": -2
+            },
+            {
+              "basis": [
+                2,
+                0
+              ],
+              "kappa": 0.093,
+              "winding": 2
+            },
+            {
+              "basis": [
+                1,
+                2
+              ],
+              "kappa": 0.0844,
+              "winding": 2
+            }
+          ],
+          "best_basis": [
+            1,
+            0
+          ],
+          "best_kappa": 0.2532,
+          "best_winding": 1,
+          "gain_over_winding": -8.07,
+          "uniformity": {
+            "n_bins_used": 11,
+            "median_local_slope": 0.20380596517119906,
+            "iqr_local_slope": 2.551952455494619,
+            "min_local_slope": -1.8005478005094808,
+            "max_local_slope": 7.5656494172188395
+          }
+        }
+      ],
+      "plane_angles_deg": [
+        90.0,
+        90.0
+      ],
+      "seconds": 89.8
+    }
+  ]
+}

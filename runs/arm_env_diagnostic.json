@@ -1,0 +1,50 @@
+{
+  "v1": {
+    "sensitivity": {
+      "joint1_mean_abs_change": 0.00991907063871622,
+      "joint1_changed_pixel_frac": 0.022796630859375,
+      "joint2_mean_abs_change": 0.0034068298991769552,
+      "joint2_changed_pixel_frac": 0.00725555419921875,
+      "both_joints_mean_abs_change": 0.011068947613239288,
+      "ratio_joint1_over_joint2": 2.9115250635532277
+    },
+    "linear_decodability": {
+      "q1": {
+        "held_out_concentration": 0.9975207854700974,
+        "median_abs_error_deg": 2.487267162816639
+      },
+      "q2": {
+        "held_out_concentration": 0.5780417261840154,
+        "median_abs_error_deg": 33.33495428851216
+      },
+      "q1_plus_q2": {
+        "held_out_concentration": 0.8372860847711315,
+        "median_abs_error_deg": 19.158570508952014
+      }
+    }
+  },
+  "v2": {
+    "sensitivity": {
+      "joint1_mean_abs_change": 0.010451952926814556,
+      "joint1_changed_pixel_frac": 0.024639129638671875,
+      "joint2_mean_abs_change": 0.004634348675608635,
+      "joint2_changed_pixel_frac": 0.011020660400390625,
+      "both_joints_mean_abs_change": 0.012963981367647648,
+      "ratio_joint1_over_joint2": 2.2553229500889653
+    },
+    "linear_decodability": {
+      "q1": {
+        "held_out_concentration": 0.9964873313766246,
+        "median_abs_error_deg": 2.5674254551269
+      },
+      "q2": {
+        "held_out_concentration": 0.5887562664785315,
+        "median_abs_error_deg": 30.3413824560464
+      },
+      "q1_plus_q2": {
+        "held_out_concentration": 0.9091603016543479,
+        "median_abs_error_deg": 13.628558917477596
+      }
+    }
+  }
+}

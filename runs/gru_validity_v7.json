@@ -1,0 +1,92 @@
+{
+  "gate": "prereg_dmc_validity_1_model_predicts_the_arm",
+  "comparator": "frame persistence on blacked-out steps",
+  "domain": "arm",
+  "task": "v7",
+  "n_models": 8,
+  "n_beating_persistence": 8,
+  "verdict": "PASS",
+  "median_ratio": 0.2872,
+  "rows": [
+    {
+      "tag": "arm_gru_dark_s0",
+      "model_kind": "gru",
+      "seed": 0,
+      "scored_steps": 756,
+      "blackout_mse_model": 0.002203,
+      "blackout_mse_persistence": 0.007754,
+      "ratio_model_over_persistence": 0.284,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_gru_dark_s1",
+      "model_kind": "gru",
+      "seed": 1,
+      "scored_steps": 756,
+      "blackout_mse_model": 0.002212,
+      "blackout_mse_persistence": 0.007754,
+      "ratio_model_over_persistence": 0.2853,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_gru_dark_s2",
+      "model_kind": "gru",
+      "seed": 2,
+      "scored_steps": 756,
+      "blackout_mse_model": 0.002334,
+      "blackout_mse_persistence": 0.007754,
+      "ratio_model_over_persistence": 0.301,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_gru_dark_s3",
+      "model_kind": "gru",
+      "seed": 3,
+      "scored_steps": 756,
+      "blackout_mse_model": 0.002151,
+      "blackout_mse_persistence": 0.007754,
+      "ratio_model_over_persistence": 0.2774,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_gru_dark_s4",
+      "model_kind": "gru",
+      "seed": 4,
+      "scored_steps": 756,
+      "blackout_mse_model": 0.002167,
+      "blackout_mse_persistence": 0.007754,
+      "ratio_model_over_persistence": 0.2795,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_gru_dark_s5",
+      "model_kind": "gru",
+      "seed": 5,
+      "scored_steps": 756,
+      "blackout_mse_model": 0.002308,
+      "blackout_mse_persistence": 0.007754,
+      "ratio_model_over_persistence": 0.2977,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_gru_dark_s6",
+      "model_kind": "gru",
+      "seed": 6,
+      "scored_steps": 756,
+      "blackout_mse_model": 0.002242,
+      "blackout_mse_persistence": 0.007754,
+      "ratio_model_over_persistence": 0.2891,
+      "beats_persistence": true
+    },
+    {
+      "tag": "arm_gru_dark_s7",
+      "model_kind": "gru",
+      "seed": 7,
+      "scored_steps": 756,
+      "blackout_mse_model": 0.00241,
+      "blackout_mse_persistence": 0.007754,
+      "ratio_model_over_persistence": 0.3108,
+      "beats_persistence": true
+    }
+  ]
+}
